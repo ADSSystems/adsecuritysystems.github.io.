@@ -24,13 +24,19 @@
     }
 
     nav ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      margin: 0;
-      padding: 0;
-    }
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+nav ul {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
 
     nav li {
       margin: 0 15px;
@@ -72,7 +78,17 @@
   list-style: none;
   padding: 0;
 }
-  
+  @media (max-width: 600px) {
+  nav ul {
+    gap: 10px;
+  }
+
+  nav ul li a {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+}
+
   </style>
 </head>
 <body>
