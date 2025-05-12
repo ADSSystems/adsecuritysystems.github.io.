@@ -1,13 +1,74 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AD Security Systems - Products</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AD Security Systems</title>
+  <link rel="stylesheet" href="styles.css" />
   <style>
-    
-/* Product section styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      background-color: #0c1c2c;
+      color: white;
+      padding: 15px 30px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 60px 30px;
+    }
+
+    h1, h2 {
+      color: #0c1c2c;
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .product-card {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+
+    .product-card img {
+      max-width: 60px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #eee;
+    }
+    /* Product section styling */
 #products {
   padding: 40px;
   background-color: #f7f7f7;
@@ -60,12 +121,35 @@
 </head>
 <body>
 
-<section id="products">
-  <h2>Our Products</h2>
-  <div class="product-grid">
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
+  <!-- Home Section -->
+  <section id="home">
+    <h1>Welcome to AD Security Systems</h1>
+    <p>Your trusted partner in safety and surveillance solutions.</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We specialize in providing advanced fire, security, and surveillance systems for homes and businesses. With a commitment to innovation and customer service, we ensure your peace of mind through reliable safety technology.</p>
+  </section>
+
+ 
+
+<section id="products">
+ 
+  <div class="product-grid">
     <div class="product">
-      <img src="images/fire-alarm.jpg" alt="Fire Alarm Systems">
+     <img src="images/fire-alarm.jpg" alt="Fire Alarm Systems">
       <h3>Fire Alarm Systems</h3>
       <p>Comprehensive fire detection systems with smoke detectors, heat sensors, and alarms.</p>
     </div>
@@ -126,6 +210,16 @@
 
   </div>
 </section>
-
+<!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: contact@adsecuritysystems.com</p>
+    <p>Phone: +123-456-7890</p>
+    <p>Address: Your Business Location</p>
+  </section>
+  
+ <footer>
+    &copy; 2025 AD Security Systems. All rights reserved.
+  </footer>
 </body>
 </html>
