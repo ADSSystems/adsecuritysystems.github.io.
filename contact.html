@@ -61,6 +61,22 @@ section {
   background-color: #eee;
   color: black;
 }
+   .contact-box {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 25px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-box:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
 
   </style>
 </head>
@@ -72,13 +88,16 @@ section {
     <li><a href="/products.html">Products</a></li>
   </ul>
 </nav>
-  <!-- Contact Section -->
   <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: contact@adsecuritysystems.com</p>
-    <p>Phone: +123-456-7890</p>
-    <p>Address: Your Business Location</p>
-  </section>
+  <h2>Contact Us</h2>
+  <div class="contact-box">
+    <p><strong>Business Head:</strong> S. Natarajan</p>
+    <p><strong>Email:</strong> <a href="mailto:natarajan@adsecuritysystems.com">natarajan@adsecuritysystems.com</a></p>
+    <p><strong>Phone:</strong> +91 78711 13770 / +91 73387 10966</p>
+    <p><strong>Address:</strong> No. 11/457, Gandhi Street, Agastheeswarar Nagar, Pozhichalur, Chennai-600 074</p>
+  </div>
+</section>
+
   
  <footer>
     &copy; 2025 AD Security Systems. All rights reserved.
